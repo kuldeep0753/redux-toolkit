@@ -1,0 +1,12 @@
+.header{
+    display: flex;
+    list-style: none;
+    border: 2px solid blue;
+    width: auto;
+    height: 100px;
+
+}
+
+.header-list{
+    margin-left: 20px;
+}
