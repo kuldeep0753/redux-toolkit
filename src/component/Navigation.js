@@ -1,16 +1,16 @@
 import React from "react";
 import "../css/Navigation.css";
-import Home from "./Home";
-import About from "./About";
-import Sign from "./Sign";
+import {NavLink} from "react-router-dom";
 
 const Navigation=()=>{
     return (<>
     <ul className="header">
-        <li className="header-list"><a href="./"><Home/></a></li>
-        <li className="header-list"><a href="./about"><About/></a></li>
-        <li className="header-list"><a href="./sign"><Sign/></a></li>
+        <li className="header-list"><NavLink to="/">Home</NavLink></li>
+        <li className="header-list"><NavLink to="/about">About</NavLink></li>
+        <li className="header-list"><NavLink to="/sign">Sign</NavLink></li>
     </ul>
+
+    
     </>)
 }
 export default Navigation;
